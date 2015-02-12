@@ -1,0 +1,12 @@
+{
+  "name": "idealiver",
+  "app_id": "ea9ce469",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
