@@ -7015,6 +7015,5 @@ a.button {
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
 
-.card .card--header {
-  background: #00c3b2;
-  color: #FFF; }
+.card {
+  border-top: 3px solid #00c3b2; }

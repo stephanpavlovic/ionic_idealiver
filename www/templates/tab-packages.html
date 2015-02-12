@@ -1,14 +1,21 @@
 <ion-view view-title="Pakete">
   <ion-content>
-    <ion-list>
-      <ion-item class="item-avatar" ng-repeat="package in packages" type="item-text-wrap" href="#/tab/package/{{package.id}}">
-        <h2>{{package.name}}</h2>
-
-        <h3>{{package.from}}</h3>
-        {{package.from_address}}
-        <h3>{{package.to}}</h3>
-        {{package.to_address}}
+    <div class="list card as-package" ng-repeat="package in packages">
+      <ion-item type="item-text-wrap" href="#/tab/package/{{package.id}}">
+        <div class='card--header'>{{package.name}}</div>
+        <div class='card--content'>
+          <div class='card--content--address'>
+            <b>{{package.start_city}}</b>
+            <br>
+            {{package.start_street}}
+          </div>
+          <div class='card--content--address'>
+            <b>{{package.end_city}}</b>
+            <br>
+            {{package.end_street}}
+          </div>
+        </div>
       </ion-item>
-    </ion-list>
+    </div>
   </ion-content>
 </ion-view>
