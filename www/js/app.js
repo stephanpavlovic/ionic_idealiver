@@ -48,8 +48,8 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     }
   })
 
-  .state('tab.friends', {
-      url: '/friends',
+  .state('tab.packages', {
+      url: '/packages',
       views: {
         'tab-friends': {
           templateUrl: 'templates/tab-packages.html',
@@ -58,12 +58,12 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       }
     })
 
-    .state('tab.friend-detail', {
-      url: '/friend/:friendId',
+    .state('tab.package-detail', {
+      url: '/package/:packageId',
       views: {
         'tab-friends': {
           templateUrl: 'templates/package-detail.html',
-          controller: 'FriendDetailCtrl'
+          controller: 'PackageCtrl'
         }
       }
     });

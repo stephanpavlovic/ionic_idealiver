@@ -8,6 +8,6 @@ angular.module('starter.controllers', [])
   $scope.packages = Packages.all();
 })
 
-.controller('FriendDetailCtrl', function($scope, $stateParams, Packages) {
-  $scope.friend = Packages.get($stateParams.friendsId);
+.controller('PackageCtrl', function($scope, $stateParams, Packages) {
+  $scope.singlePackage = Packages.get($stateParams.packageId);
 })
