@@ -52,17 +52,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       url: '/friends',
       views: {
         'tab-friends': {
-          templateUrl: 'templates/tab-friends.html',
-          controller: 'FriendsCtrl'
+          templateUrl: 'templates/tab-packages.html',
+          controller: 'PackagesCtrl'
         }
       }
     })
-    
+
     .state('tab.friend-detail', {
       url: '/friend/:friendId',
       views: {
         'tab-friends': {
-          templateUrl: 'templates/friend-detail.html',
+          templateUrl: 'templates/package-detail.html',
           controller: 'FriendDetailCtrl'
         }
       }
