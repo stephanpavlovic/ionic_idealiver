@@ -9,5 +9,5 @@ angular.module('starter.controllers', [])
 })
 
 .controller('PackageCtrl', function($scope, $stateParams, Packages) {
-  $scope.singlePackage = Packages.get($stateParams.packageId);
+  $scope.package = Packages.get($stateParams.packageId);
 })

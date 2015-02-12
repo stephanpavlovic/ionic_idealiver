@@ -1,13 +1,12 @@
 <ion-view view-title="Pakete">
   <ion-content>
-  Hallo
     <ion-list>
       <ion-item class="item-avatar" ng-repeat="package in packages" type="item-text-wrap" href="#/tab/package/{{package.id}}">
         <h2>{{package.name}}</h2>
 
-        <h4>{{package.from}}</h4>
+        <h3>{{package.from}}</h3>
         {{package.from_address}}
-        <h4>{{package.to}}</h4>
+        <h3>{{package.to}}</h3>
         {{package.to_address}}
       </ion-item>
     </ion-list>

@@ -51,7 +51,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
   .state('tab.packages', {
       url: '/packages',
       views: {
-        'tab-friends': {
+        'tab-packages': {
           templateUrl: 'templates/tab-packages.html',
           controller: 'PackagesCtrl'
         }
@@ -61,7 +61,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab.package-detail', {
       url: '/package/:packageId',
       views: {
-        'tab-friends': {
+        'tab-packages': {
           templateUrl: 'templates/package-detail.html',
           controller: 'PackageCtrl'
         }
