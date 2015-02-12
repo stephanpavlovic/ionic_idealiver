@@ -7017,3 +7017,7 @@ a.button {
 
 .card {
   border-top: 3px solid #00c3b2; }
+
+.angular-leaflet-map {
+  height: 400px;
+  width: 300px; }

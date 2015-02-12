@@ -1,5 +1,14 @@
-<ion-view view-title="hallo">
-  <ion-content class="padding">
+<ion-view view-title="{{package.name}}">
+  <!-- <ion-content class="padding">
     {{package.name}}
+    <ion-nav-buttons side="right">
+      <button ng-click="locate();" class="button button-icon icon ion-pinpoint"></button>
+    </ion-nav-buttons> -->
+
+  <ion-content data-tap-disabled="true" class="padding">
+    <h4>{{package.start_lat}}</h4>
+    <h4>{{package.start_long}}</h4>
+    <leaflet defaults="map.defaults" center="map.center" markers="map.markers" ng-if="map"></leaflet>
+
   </ion-content>
 </ion-view>
